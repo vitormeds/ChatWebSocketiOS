@@ -23,6 +23,7 @@
 		F4D08E972C7BC10000EEC320 /* ChatWebSocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D08E962C7BC10000EEC320 /* ChatWebSocketTests.swift */; };
 		F4D08EA12C7BC10000EEC320 /* ChatWebSocketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D08EA02C7BC10000EEC320 /* ChatWebSocketUITests.swift */; };
 		F4D08EA32C7BC10000EEC320 /* ChatWebSocketUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D08EA22C7BC10000EEC320 /* ChatWebSocketUITestsLaunchTests.swift */; };
+		F4FFECD82C7BCF0900AF8EC4 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FFECD72C7BCF0900AF8EC4 /* Messages.swift */; };
 		FA219B884CF8E252E12B2F7F /* Pods_ChatWebSocket_ChatWebSocketUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CE088135E23513FC3A55A2 /* Pods_ChatWebSocket_ChatWebSocketUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		F4D08E9C2C7BC10000EEC320 /* ChatWebSocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatWebSocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D08EA02C7BC10000EEC320 /* ChatWebSocketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWebSocketUITests.swift; sourceTree = "<group>"; };
 		F4D08EA22C7BC10000EEC320 /* ChatWebSocketUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWebSocketUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4FFECD72C7BCF0900AF8EC4 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,8 +194,9 @@
 		F4D08E7F2C7BC0FF00EEC320 /* ChatWebSocket */ = {
 			isa = PBXGroup;
 			children = (
-				F45FEAF82C7BC55A0040D172 /* Network */,
 				F45FEAE12C7BC2230040D172 /* Application */,
+				F4FFECD62C7BCEFE00AF8EC4 /* Model */,
+				F45FEAF82C7BC55A0040D172 /* Network */,
 				F45FEAE82C7BC2230040D172 /* Features */,
 				F45FEADE2C7BC2230040D172 /* Router */,
 				F4D08E842C7BC10000EEC320 /* Assets.xcassets */,
@@ -226,6 +229,14 @@
 				F4D08EA22C7BC10000EEC320 /* ChatWebSocketUITestsLaunchTests.swift */,
 			);
 			path = ChatWebSocketUITests;
+			sourceTree = "<group>";
+		};
+		F4FFECD62C7BCEFE00AF8EC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4FFECD72C7BCF0900AF8EC4 /* Messages.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +484,7 @@
 				F45FEAEC2C7BC2230040D172 /* ContentView.swift in Sources */,
 				F45FEAED2C7BC2230040D172 /* Router.swift in Sources */,
 				F4D08E8D2C7BC10000EEC320 /* ChatWebSocket.xcdatamodeld in Sources */,
+				F4FFECD82C7BCF0900AF8EC4 /* Messages.swift in Sources */,
 				F45FEAFA2C7BC5670040D172 /* SocketIOManager.swift in Sources */,
 				F45FEAEF2C7BC2230040D172 /* ChatWebSocketApp.swift in Sources */,
 			);

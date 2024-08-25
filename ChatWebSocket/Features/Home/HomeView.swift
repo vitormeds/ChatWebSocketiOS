@@ -12,10 +12,22 @@ struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .onAppear(perform: {
-                viewModel.conect()
-            })
+        List(self.viewModel.messages) { message in
+            Text(message.message)
+        }.onAppear(perform: {
+            viewModel.conect()
+        })
+        Spacer()
+        HStack {
+            TextField("Digite uma mensagem...", text: $viewModel.newMessage)
+            Button {
+                viewModel.sendMessage()
+                viewModel.newMessage = ""
+            } label: {
+                Text("Enviar")
+            }
+        }
+        .padding(EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8))
     }
 }
 
