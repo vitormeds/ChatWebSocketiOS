@@ -1,0 +1,6 @@
+framework module Pods_ChatWebSocketTests {
+  umbrella header "Pods-ChatWebSocketTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
