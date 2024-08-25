@@ -12,8 +12,9 @@ struct Messages {
 }
 
 struct Message: Codable, Identifiable {
-    let id = UUID()
+    let id: String
     let message: String
+    let user: String
 }
 
 

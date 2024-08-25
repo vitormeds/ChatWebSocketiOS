@@ -13,15 +13,17 @@ class HomeViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var error: Error? = nil
     @Published var newMessage: String = ""
+    var user = ""
     
     let webSocket = SocketIOManager()
     
     func conect() {
         webSocket.connect(delegate: self)
+        user = UUID().uuidString
     }
     
     func sendMessage() {
-        let newMessage = Message(message: newMessage)
+        let newMessage = Message(id: UUID().uuidString, message: newMessage, user: user)
         webSocket.sendMessage(message: newMessage)
         self.messages.append(newMessage)
     }
@@ -31,7 +33,9 @@ class HomeViewModel: ObservableObject {
 extension HomeViewModel: SocketIOManagerDelegate {
     
     func onMessage(message: Message) {
-        self.messages.append(message)
+        if message.user != user {
+            self.messages.append(message)
+        }
     }
 }
 

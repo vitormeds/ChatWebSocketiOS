@@ -14,6 +14,8 @@ struct HomeView: View {
     var body: some View {
         List(self.viewModel.messages) { message in
             Text(message.message)
+                .frame(maxWidth: .infinity, alignment: message.user != viewModel.user ? .leading:.trailing)
+                .foregroundStyle(message.user != viewModel.user ? .red:.blue)
         }.onAppear(perform: {
             viewModel.conect()
         })

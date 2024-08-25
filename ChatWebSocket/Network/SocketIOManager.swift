@@ -37,11 +37,10 @@ class SocketIOManager: NSObject {
         }
         
         socket.on("message") { data, ack in
-            guard let jsonData = data.first as? [String: Any] else {
+            guard let jsonData = data.first as? String, let data = jsonData.data(using: .utf8) else {
                 return
             }
             do {
-                let data = try JSONSerialization.data(withJSONObject: jsonData, options: [])
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
                 let message = try decoder.decode(Message.self, from: data)
