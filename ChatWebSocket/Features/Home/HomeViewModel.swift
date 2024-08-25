@@ -12,10 +12,10 @@ class HomeViewModel: ObservableObject {
     @Published var messages: [String]?
     @Published var isLoading = false
     @Published var error: Error? = nil
+    let webSocket = SocketIOManager()
     
-    func getCharacters() {
-        isLoading = true
-        
+    func conect() {
+        webSocket.connect()
     }
     
 }
