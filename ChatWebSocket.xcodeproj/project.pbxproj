@@ -10,8 +10,12 @@
 		3E8A8F12CEE123B7645A069B /* Pods_ChatWebSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE70CF29249E57757658EDCA /* Pods_ChatWebSocket.framework */; };
 		72AA384494D88F2C3EFFD0AA /* Pods_ChatWebSocket_ChatWebSocketUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCD591E512E7530ACF1026A /* Pods_ChatWebSocket_ChatWebSocketUITests.framework */; };
 		E4511F57D9EDDF44C7ACCC0E /* Pods_ChatWebSocketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A843BF2361C58C621FE0F333 /* Pods_ChatWebSocketTests.framework */; };
-		F4D08E812C7BC0FF00EEC320 /* ChatWebSocketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D08E802C7BC0FF00EEC320 /* ChatWebSocketApp.swift */; };
-		F4D08E832C7BC0FF00EEC320 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D08E822C7BC0FF00EEC320 /* ContentView.swift */; };
+		F45FEAEC2C7BC2230040D172 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45FEADC2C7BC2230040D172 /* ContentView.swift */; };
+		F45FEAED2C7BC2230040D172 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45FEADD2C7BC2230040D172 /* Router.swift */; };
+		F45FEAEF2C7BC2230040D172 /* ChatWebSocketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45FEAE02C7BC2230040D172 /* ChatWebSocketApp.swift */; };
+		F45FEAF02C7BC2230040D172 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45FEAE22C7BC2230040D172 /* HomeView.swift */; };
+		F45FEAF12C7BC2230040D172 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45FEAE32C7BC2230040D172 /* HomeViewModel.swift */; };
+		F45FEAF72C7BC32D0040D172 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45FEAF62C7BC32D0040D172 /* MainView.swift */; };
 		F4D08E852C7BC10000EEC320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D08E842C7BC10000EEC320 /* Assets.xcassets */; };
 		F4D08E882C7BC10000EEC320 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D08E872C7BC10000EEC320 /* Preview Assets.xcassets */; };
 		F4D08E8A2C7BC10000EEC320 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D08E892C7BC10000EEC320 /* Persistence.swift */; };
@@ -47,9 +51,13 @@
 		96A246EFB82103292E4F17F5 /* Pods-ChatWebSocket-ChatWebSocketUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatWebSocket-ChatWebSocketUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChatWebSocket-ChatWebSocketUITests/Pods-ChatWebSocket-ChatWebSocketUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A843BF2361C58C621FE0F333 /* Pods_ChatWebSocketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatWebSocketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE70CF29249E57757658EDCA /* Pods_ChatWebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45FEADC2C7BC2230040D172 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F45FEADD2C7BC2230040D172 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F45FEAE02C7BC2230040D172 /* ChatWebSocketApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatWebSocketApp.swift; sourceTree = "<group>"; };
+		F45FEAE22C7BC2230040D172 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F45FEAE32C7BC2230040D172 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F45FEAF62C7BC32D0040D172 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F4D08E7D2C7BC0FF00EEC320 /* ChatWebSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatWebSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4D08E802C7BC0FF00EEC320 /* ChatWebSocketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWebSocketApp.swift; sourceTree = "<group>"; };
-		F4D08E822C7BC0FF00EEC320 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F4D08E842C7BC10000EEC320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4D08E872C7BC10000EEC320 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4D08E892C7BC10000EEC320 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -100,7 +108,6 @@
 				1E79AE5066A4C7E4DDCE3E6F /* Pods-ChatWebSocketTests.debug.xcconfig */,
 				2F3C2A720A3003520991E2A9 /* Pods-ChatWebSocketTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -112,6 +119,42 @@
 				A843BF2361C58C621FE0F333 /* Pods_ChatWebSocketTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F45FEADE2C7BC2230040D172 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F45FEADC2C7BC2230040D172 /* ContentView.swift */,
+				F45FEADD2C7BC2230040D172 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F45FEAE12C7BC2230040D172 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F4D08E892C7BC10000EEC320 /* Persistence.swift */,
+				F45FEAE02C7BC2230040D172 /* ChatWebSocketApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F45FEAE42C7BC2230040D172 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F45FEAE22C7BC2230040D172 /* HomeView.swift */,
+				F45FEAE32C7BC2230040D172 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F45FEAE82C7BC2230040D172 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F45FEAF62C7BC32D0040D172 /* MainView.swift */,
+				F45FEAE42C7BC2230040D172 /* Home */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		F4D08E742C7BC0FF00EEC320 = {
@@ -139,10 +182,10 @@
 		F4D08E7F2C7BC0FF00EEC320 /* ChatWebSocket */ = {
 			isa = PBXGroup;
 			children = (
-				F4D08E802C7BC0FF00EEC320 /* ChatWebSocketApp.swift */,
-				F4D08E822C7BC0FF00EEC320 /* ContentView.swift */,
+				F45FEAE12C7BC2230040D172 /* Application */,
+				F45FEAE82C7BC2230040D172 /* Features */,
+				F45FEADE2C7BC2230040D172 /* Router */,
 				F4D08E842C7BC10000EEC320 /* Assets.xcassets */,
-				F4D08E892C7BC10000EEC320 /* Persistence.swift */,
 				F4D08E8B2C7BC10000EEC320 /* ChatWebSocket.xcdatamodeld */,
 				F4D08E862C7BC10000EEC320 /* Preview Content */,
 			);
@@ -376,10 +419,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45FEAF12C7BC2230040D172 /* HomeViewModel.swift in Sources */,
+				F45FEAF72C7BC32D0040D172 /* MainView.swift in Sources */,
 				F4D08E8A2C7BC10000EEC320 /* Persistence.swift in Sources */,
+				F45FEAF02C7BC2230040D172 /* HomeView.swift in Sources */,
+				F45FEAEC2C7BC2230040D172 /* ContentView.swift in Sources */,
+				F45FEAED2C7BC2230040D172 /* Router.swift in Sources */,
 				F4D08E8D2C7BC10000EEC320 /* ChatWebSocket.xcdatamodeld in Sources */,
-				F4D08E832C7BC0FF00EEC320 /* ContentView.swift in Sources */,
-				F4D08E812C7BC0FF00EEC320 /* ChatWebSocketApp.swift in Sources */,
+				F45FEAEF2C7BC2230040D172 /* ChatWebSocketApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
