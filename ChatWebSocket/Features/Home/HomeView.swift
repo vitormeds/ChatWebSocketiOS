@@ -15,7 +15,7 @@ struct HomeView: View {
                     viewModel.conect()
                 })
                 .listStyle(.plain)
-                .padding(.top, 8)
+                .padding(.top, 16)
                 .onChange(of: viewModel.messages, {
                     if let lastMessage = viewModel.messages.last {
                         withAnimation {
@@ -38,7 +38,7 @@ struct HomeView: View {
                     Text("Enviar")
                 }
             }
-            .padding(EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8))
+            .padding(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
         }
     }
 
