@@ -11,10 +11,8 @@ struct Messages {
     let messages: [Message]?
 }
 
-struct Message: Codable, Identifiable {
+struct Message: Codable, Identifiable, Equatable {
     let id: String
     let message: String
     let user: String
 }
-
-

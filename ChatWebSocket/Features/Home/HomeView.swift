@@ -13,23 +13,31 @@ struct HomeView: View {
 
     var body: some View {
         List(self.viewModel.messages) { message in
-            Text(message.message)
-                .frame(maxWidth: .infinity, alignment: message.user != viewModel.user ? .leading:.trailing)
-                .foregroundStyle(message.user != viewModel.user ? .red:.blue)
+            ChatMessageView(message: message, isSentByCurrentUser: message.user == viewModel.user)
+                .listRowSeparator(.hidden)
         }.onAppear(perform: {
             viewModel.conect()
         })
+        .listStyle(.plain)
+        .padding(.top, 8)
         Spacer()
         HStack {
             TextField("Digite uma mensagem...", text: $viewModel.newMessage)
+                .onSubmit {
+                sendMessage()
+            }
             Button {
-                viewModel.sendMessage()
-                viewModel.newMessage = ""
+                sendMessage()
             } label: {
                 Text("Enviar")
             }
         }
         .padding(EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8))
+    }
+    
+    func sendMessage() {
+        viewModel.sendMessage()
+        viewModel.newMessage = ""
     }
 }
 

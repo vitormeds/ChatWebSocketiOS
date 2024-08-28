@@ -16,6 +16,7 @@
 		F45FEAF12C7BC2230040D172 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45FEAE32C7BC2230040D172 /* HomeViewModel.swift */; };
 		F45FEAF72C7BC32D0040D172 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45FEAF62C7BC32D0040D172 /* MainView.swift */; };
 		F45FEAFA2C7BC5670040D172 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45FEAF92C7BC5670040D172 /* SocketIOManager.swift */; };
+		F4AD308B2C7EAD940015996A /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AD308A2C7EAD940015996A /* ChatMessageView.swift */; };
 		F4D08E852C7BC10000EEC320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D08E842C7BC10000EEC320 /* Assets.xcassets */; };
 		F4D08E882C7BC10000EEC320 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D08E872C7BC10000EEC320 /* Preview Assets.xcassets */; };
 		F4D08E8A2C7BC10000EEC320 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D08E892C7BC10000EEC320 /* Persistence.swift */; };
@@ -61,6 +62,7 @@
 		F45FEAE32C7BC2230040D172 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F45FEAF62C7BC32D0040D172 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F45FEAF92C7BC5670040D172 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		F4AD308A2C7EAD940015996A /* ChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
 		F4D08E7D2C7BC0FF00EEC320 /* ChatWebSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatWebSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D08E842C7BC10000EEC320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4D08E872C7BC10000EEC320 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			children = (
 				F45FEAE22C7BC2230040D172 /* HomeView.swift */,
 				F45FEAE32C7BC2230040D172 /* HomeViewModel.swift */,
+				F4AD308A2C7EAD940015996A /* ChatMessageView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				F45FEAED2C7BC2230040D172 /* Router.swift in Sources */,
 				F4D08E8D2C7BC10000EEC320 /* ChatWebSocket.xcdatamodeld in Sources */,
 				F4FFECD82C7BCF0900AF8EC4 /* Messages.swift in Sources */,
+				F4AD308B2C7EAD940015996A /* ChatMessageView.swift in Sources */,
 				F45FEAFA2C7BC5670040D172 /* SocketIOManager.swift in Sources */,
 				F45FEAEF2C7BC2230040D172 /* ChatWebSocketApp.swift in Sources */,
 			);
